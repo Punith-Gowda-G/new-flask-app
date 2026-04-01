@@ -11,7 +11,6 @@ def posts():
         "status": "successfully triggered auto deployment",
         "status_code": 200
     
-
 @app.route("/comments")
 def comments():
     return jsonify(requests.get("https://jsonplaceholder.typicode.com/comments").json())
