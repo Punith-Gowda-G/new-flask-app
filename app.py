@@ -7,6 +7,7 @@ app = Flask(__name__)
 @app.route("/posts")
 def posts():
     return jsonify(requests.get("https://jsonplaceholder.typicode.com/posts").json())
+    "status": "successfully triggered auto deployment"
 
 @app.route("/comments")
 def comments():
